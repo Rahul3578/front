@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+
+body {
+  padding-top: 60px;
+  color: #f9f9f9;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+    font-size: large;
+  }
+}
+
+.js-nav {
+  display: flex;
+  color: rgb(254, 251, 251);
+  text-decoration: none;
+  position: absolute;
+  left: 2em;
+  padding-top: 50;
+}
+
+body {
+  display: contents;
+  margin: 0;
+  padding-top: 60px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(6, 6, 6, 0.956);
+  padding-left: 60px;
+}
+
+
+
+#flex-shopping-card {
+  font-size: larger;
+  display: flex; 
+  flex-wrap: wrap;
+  position: static;
+  background: #d5dae2;
+  background: -moz-linear-gradient(top, #fff 0%, #d5dae2 100%);
+  background: -webkit-linear-gradient(top, #fff 0%, #d5dae2 100%);
+  background: linear-gradient(to right, #d5dae2 0%, #fff 35%, #fff 50%, #fff 65%, #d5dae2 120%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5dae2', endColorstr='#ffffff', GradientType=0);
+  min-height: 33px;
+  padding-top: 50px;
+  padding-left: 80px;
+  width: 100%;
+  height: 33px;
+  text-align: center;
+}
+
+.flex {
+  margin: 0;
+  padding-top: 100;
+  padding-left: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.image {
+  --s: 15px;
+  /* size of the frame */
+  --b: 2px;
+  /* border thickness */
+  --w: 200px;
+  /* width of the image */
+  --c: #504949;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
+  background:
+    linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+    linear-gradient(90deg, var(--_g)) 50%/var(--_i, 100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid rgba(138, 134, 134, 0.512);
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
+  
+}
+
+.image:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
+}
+
+
+
+.flex-shopping-card {
+  
+  background: #c279e6;
+ 
+  background: -moz-linear-gradient(-45deg, #e99cf0 0%, #42c2b5 52%, #c787e7 100%);
+  
+  background: -webkit-linear-gradient(-45deg, #e659eb 0%, #50d5d1 52%, #c781db 100%);
+  
+  background: linear-gradient(135deg, #be83e180 0%, #42c2b5 52%, #a534ce 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#59adeb', endColorstr='#34ce93', GradientType=1);
+  
+  background-size: 350% 350%;
+  animation: waveColors 8s ease infinite;
+  
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: left;
+  
+}
+
+
+.StreamsHero-header {
+  color: #fefefef6;
+  text-align: center;
+  font-weight: 300;
+  line-height: 48px;
+  margin-bottom: -5px;
+  font-size: 40px;
+}
+
+.StreamsHero-header-2 {
+  color: #fefefef6;
+  text-align: center;
+  font-weight: 300;
+  line-height: 48px;
+  margin-bottom: -5px;
+  font-size: 60px;
+}
+
+
+.StreamsHero-blurb {
+  text-align:center;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 28px;
+  opacity: .7;
+  ms-filter: "alpha(opacity=70)";
+  transition: opacity 300ms linear;
+  padding-bottom: 2em;
+}
+
+.Button {
+  -webkit-appearance: none;
+  background: transparent;
+  border-color: currentcolor;
+  border-style: solid;
+  border-width: 1px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font: inherit;
+  line-height: normal;
+  margin: 0;
+  padding: .4em .75em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: normal;
+}
+
+.StreamsHero-buttonContainer {
+  color: #fafafa;
+  margin: 0 auto;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  text-align: right;
+  width: 95%;
+}
+
+.StreamsHero-buttonContainer .Button {
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 35px;
+}
+
+.StreamsHero-buttonContainer .Button.StreamsLogin {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid transparent;
+}
+
+.StreamsHero-buttonContainer .Button:hover,
+.StreamsHero-buttonContainer .Button:focus {
+  background: #fff;
+  color: #1df228;
+}
+
+
+/* Animation Wave Color */
+
+@-webkit-keyframes waveColors {
+  0% {
+    background-position: 0% 7%;
+  }
+
+  50% {
+    background-position: 100% 94%;
+  }
+
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+@keyframes waveColors {
+  0% {
+    background-position: 0% 7%;
+  }
+
+  50% {
+    background-position: 100% 94%;
+  }
+
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+
+
+
+.product-item {
+  padding-top: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffbfb4b;
+  align-items: center;
+  color: #050505;
+  justify-content: center;
+  padding: 40px;
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(82, 82, 82, 0.267);
+  margin: 30px;
+  object-fit: cover;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  color: #fff;
+}
