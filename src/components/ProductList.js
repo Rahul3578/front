@@ -31,7 +31,7 @@ function ProductList({ product }) {
       currency: 'INR',
       name: 'Payment Gateway',
       handler: function (response) {
-        alert('Payment successful, Your Order will be delivered on time. Thankyou Neeraj');
+        alert('Payment successful, your order will be delivered on time. Thankyou Hritu');
       },
       prefill: {
         name: 'Payment Gateway',
